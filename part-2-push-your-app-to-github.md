@@ -4,8 +4,6 @@ description: 'Created by Alyson La, @realalysonla, updated by Nicole Maneth'
 
 # Part 2: Push Your App to Github
 
-### Instead we're using github desktop app. at least on windows; this tutorial is buggy for windows {#things-you-need-before-you-get-started}
-
 ### Things you need before you get started {#things-you-need-before-you-get-started}
 
 #### Git & GitHub {#git--github}
@@ -32,23 +30,17 @@ git init
 
 This initializes a git repository in your project
 
-_Note:_ If you’ve already done the [Heroku guide](http://guides.railsgirls.com/heroku), then you’ve already initialized a git repository & you can move on to the next steps.
-
 Next check if a file called `README.rdoc` exists in your railsgirls directory:
 
 ```text
 ls README.rdoc
 ```
 
-Choose your operating system: [Windows](http://guides.railsgirls.com/github#) \| [Other](http://guides.railsgirls.com/github#)
-
 If the file doesn’t exist, create it by typing:
 
 ```text
 touch README.rdoc
 ```
-
-Choose your operating system: [Windows](http://guides.railsgirls.com/github#) \| [Other](http://guides.railsgirls.com/github#)
 
 **COACH:** Talk a little about README.rdoc
 
@@ -93,6 +85,8 @@ Then type:
 ```text
 git push -u origin master
 ```
+
+If this command results in an error like `fatal: unable to access  error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version`then we'll install git directly from the source.  Follow the default settings.  Once the installation finishes, you will have a new program called "Git Bash" on your machine.  You will use this command terminal for interacting with git throughout the tutorial.
 
 This sends your commits in your “master” branch to GitHub
 
