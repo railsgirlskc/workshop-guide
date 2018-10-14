@@ -114,7 +114,7 @@ Heroku’s platform is not without its quirks. Applications run on Heroku live w
 
 > Each dyno gets its own ephemeral filesystem, with a fresh copy of the most recently deployed code. During the dyno’s lifetime its running processes can use the filesystem as a temporary scratchpad, but no files that are written are visible to processes in any other dyno and any files written will be discarded the moment the dyno is stopped or restarted. For example, this occurs any time a dyno is replaced due to application deployment and approximately once a day as part of normal dyno management.
 
-In the [App](http://guides.railsgirls.com/app) tutorial the ability to attach a file to the Idea record is added, which results in new files being written to your applications`public/uploads` folder. The ephemeral storage in Heroku can be seen with the following steps:
+In the [App](part-1-build-your-first-app.md#4-adding-picture-uploads) tutorial the ability to attach a file to the Idea record is added, which results in new files being written to your applications`public/uploads` folder. The ephemeral storage in Heroku can be seen with the following steps:
 
 1. Launch the app with `heroku open`
 2. Add a new Idea with an image
