@@ -6,11 +6,11 @@ description: >-
 
 # Part 7: Create Users and Authentication with Devise
 
-### _1._Add devise gem {#1-add-devise-gem}
+### 1. Add devise gem {#1-add-devise-gem}
 
 Open up your `Gemfile` and add this line
 
-```text
+```ruby
 gem 'devise'
 ```
 
@@ -22,7 +22,7 @@ bundle install
 
 to install the gem. **Also remember to restart the Rails server**.
 
-### _2._Set up devise in your app {#2-set-up-devise-in-your-app}
+### 2. Add Devise your app {#2-set-up-devise-in-your-app}
 
 Run the following command in the terminal.
 
@@ -30,11 +30,11 @@ Run the following command in the terminal.
 rails g devise:install
 ```
 
-### _3._Configure Devise {#3-configure-devise}
+### 3. Configure Devise {#3-configure-devise}
 
 Ensure you have defined default url options in your environments files. Open up `config/environments/development.rb` and add this line:
 
-```text
+```ruby
    config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 ```
 
@@ -42,7 +42,7 @@ before the `end` keyword.
 
 Open up `app/views/layouts/application.html.erb` and add:
 
-```text
+```markup
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>
@@ -53,19 +53,19 @@ Open up `app/views/layouts/application.html.erb` and add:
 
 right above
 
-```text
+```ruby
    <%= yield %>
 ```
 
 Open up `app/views/ideas/show.html.erb` and remove the line that says:
 
-```text
+```markup
 <p id="notice"><%= notice %></p>
 ```
 
 Do the same for `app/views/comments/show.html.erb`. These lines are not necessary as we’ve put the notice in the `app/views/layouts/application.html.erb` file.
 
-### _4._Setup the User model {#4-setup-the-user-model}
+### 4. Setup the User model {#4-setup-the-user-model}
 
 We’ll use a bundled generator script to create the User model.
 
@@ -74,21 +74,23 @@ We’ll use a bundled generator script to create the User model.
    rails db:migrate
 ```
 
+Don't forget to restart your `rails server`
+
 **Coach:** Explain what user model has been generated. What are the fields?
 
-### _5._Create your first user {#5-create-your-first-user}
+### 5. Create your first user {#5-create-your-first-user}
 
 Now that you have set everything up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
 
 Make sure your rails server is running, open [http://localhost:3000/users/sign\_up](http://localhost:3000/users/sign_up) and create your user account.
 
-### _6._Add sign-up and login links {#6-add-sign-up-and-login-links}
+### 6. Add sign-up and login links {#6-add-sign-up-and-login-links}
 
 All we need to do now is to add appropriate links or notice about the user being logged in in the top right corner of the navigation bar.
 
 In order to do that, edit `app/views/layouts/application.html.erb` add:
 
-```text
+```markup
 <p class="navbar-text pull-right">
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
@@ -103,9 +105,11 @@ In order to do that, edit `app/views/layouts/application.html.erb` add:
 
 right after
 
-```text
-<ul class="nav">
-  <li class="active"><a href="/ideas">Ideas</a></li>
+```markup
+<ul class="nav navbar-nav">
+  <li><a href="/ideas">Ideas</a></li>  
+  <li ><%= link_to 'New Idea', new_idea_path %></li>
+  <li><a href="/pages/info">Info</a></li>
 </ul>
 ```
 
@@ -115,11 +119,13 @@ Finally, force the user to redirect to the login page if the user was not logged
   before_action :authenticate_user!
 ```
 
-after `protect_from_forgery with: :exception`.
+after `class ApplicationController < ActionController::Base`.
 
-Open your browser and try logging in and out from.
+Open your browser and try logging in and out from your app.
 
 **Coach:** Talk about the `user_signed_in?` and `current_user` helpers. Why are they useful?
+
+![](.gitbook/assets/11-devise-login%20%281%29.PNG)
 
 ### What next? {#what-next}
 
