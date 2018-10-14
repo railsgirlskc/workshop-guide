@@ -8,6 +8,8 @@ description: 'Created by Terence Lee, @hone02, updated by Nicole Maneth'
 
 Follow steps “Introduction” and “Set up” of the [Getting Started on Heroku with Ruby](https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction) to sign up, install the Heroku CLI, and login.
 
+Right now it looks like the download link for OpenSSL on the Heroku page is broken.  [Here's what you're looking for](https://slproweb.com/products/Win32OpenSSL.html) for Windows.
+
 **COACH**: Talk about the benefits of deploying to Heroku vs traditional servers.
 
 #### Preparing your app {#preparing-your-app}
@@ -28,13 +30,13 @@ git commit -m "initial commit"
 
 First, we need to get our database to work on Heroku, which uses a different database. Please change the following in the Gemfile:
 
-```text
+```ruby
 gem 'sqlite3'
 ```
 
 to
 
-```text
+```ruby
 group :development do
   gem 'sqlite3'
 end
@@ -60,7 +62,9 @@ Creating app... done, ⬢ young-reaches-87845
 https://young-reaches-87845.herokuapp.com/ | https://git.heroku.com/young-reaches-87845.git
 ```
 
-In this case “young-reaches-87845” is your app name.
+In this case “young-reaches-87845” is your app name.  It's randomly generated; yours will different than this one in the guide, and your neighbors.
+
+Because this project uses an older, but still common, version of ruby, we'll have to tell Heroku we want to use an older stack on their servers by typing `heroku stack:set heroku-16`
 
 **Pushing the code**
 
@@ -114,7 +118,7 @@ Heroku’s platform is not without its quirks. Applications run on Heroku live w
 
 > Each dyno gets its own ephemeral filesystem, with a fresh copy of the most recently deployed code. During the dyno’s lifetime its running processes can use the filesystem as a temporary scratchpad, but no files that are written are visible to processes in any other dyno and any files written will be discarded the moment the dyno is stopped or restarted. For example, this occurs any time a dyno is replaced due to application deployment and approximately once a day as part of normal dyno management.
 
-In the [App](part-1-build-your-first-app.md#4-adding-picture-uploads) tutorial the ability to attach a file to the Idea record is added, which results in new files being written to your applications`public/uploads` folder. The ephemeral storage in Heroku can be seen with the following steps:
+In the [App](part-1-build-your-first-app.md#4-adding-picture-uploads) tutorial the ability to attach a file to the Idea record was added, which results in new files being written to your applications`public/uploads` folder. The ephemeral storage in Heroku can be seen with the following steps:
 
 1. Launch the app with `heroku open`
 2. Add a new Idea with an image
