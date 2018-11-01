@@ -6,24 +6,24 @@ description: 'Created by Vesa Vänskä, @vesan, updated by Nicole Maneth'
 
 **Make sure you have Rails installed.** [**Follow the installation guide**](https://railsgirlskc.gitbook.io/install-guide/) to get set up.
 
-### Get to know the tools {#get-to-know-the-tools}
+### Get to know the tools <a id="get-to-know-the-tools"></a>
 
 ####  
 
-#### Text Editor {#text-editor}
+#### Text Editor <a id="text-editor"></a>
 
 * [Atom](https://atom.io/), [Sublime Text](http://www.sublimetext.com/), Vim and Emacs are examples of text editors your can use for writing code and editing files.
 
 ####  
 
-#### Terminal \(known as Command Prompt on Windows\) {#terminal-known-as-command-prompt-on-windows}
+#### Terminal \(known as Command Prompt on Windows\) <a id="terminal-known-as-command-prompt-on-windows"></a>
 
 * Where you start the rails server and run commands.
 * This is a program on your computer that you can get to through your Spotlight search on Mac \(search for “Terminal”\), or by searching for the “Command Prompt” in your programs on Windows.
 
 ####  
 
-#### Web browser {#web-browser}
+#### Web browser <a id="web-browser"></a>
 
 * \(Firefox, Safari, Chrome\) for viewing your application.
 
@@ -39,11 +39,11 @@ For example, if you see a terminal icon next to the highlight, like in the examp
 
 Need some reminders along the way? Check out this [handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
 
-#### Important {#important}
+#### Important <a id="important"></a>
 
 It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you’re having trouble check the Operating System switcher at the bottom of the commands. In case you’re using a cloud service \(e.g. Codenvy\), you need to run the Linux commands even if you are on a Windows computer.
 
-### 1. __Creating the application {#1-creating-the-application}
+### 1. __Creating the application <a id="1-creating-the-application"></a>
 
 We’re going to create a new Rails app called _railsgirls_.
 
@@ -102,7 +102,7 @@ Hit Ctrl+C in the terminal to quit the server.
 
 **Coach:** Explain what each command does. What was generated? What does the server do?
 
-### 2. Create Idea scaffold {#2-create-idea-scaffold}
+### 2. Create Idea scaffold <a id="2-create-idea-scaffold"></a>
 
 We’re going to use Rails’ scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
@@ -125,7 +125,7 @@ Click around and test what you got by running these few command-line commands.
 
 ![What you should see on your screen now.](.gitbook/assets/ideas.PNG)
 
-### 3. Design {#3-design}
+### 3. Design <a id="3-design"></a>
 
 **Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby \(ERB\)? What is MVC and how does this relate to it? \(Models and controllers are responsible for generating the HTML views.\)
 
@@ -206,7 +206,7 @@ Now make sure you saved your files and refresh the browser to see what was chang
 
 **Coach:** Talk a little about CSS and layouts.
 
-### 4. Adding picture uploads {#4-adding-picture-uploads}
+### 4. Adding picture uploads <a id="4-adding-picture-uploads"></a>
 
 We need to install a piece of software to let us upload files in Rails.
 
@@ -310,7 +310,7 @@ Try entering a new idea with a picture. See how our CSS styles it.
 
 **Coach:** Talk a little about HTML.
 
-### 5. Finetune the routes {#5-finetune-the-routes}
+### 5. Finetune the routes <a id="5-finetune-the-routes"></a>
 
 Open [http://localhost:3000](http://localhost:3000/) \(or your preview url, if you are using a cloud service\). It still shows the “Yay! You’re on Rails!” page. Let’s make it redirect to the ideas page.
 
@@ -324,7 +324,7 @@ Test the change by opening the root path \(that is, [http://localhost:3000/](htt
 
 **Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
 
-### 6. Create static page in your app {#6-create-static-page-in-your-app}
+### 6. Create static page in your app <a id="6-create-static-page-in-your-app"></a>
 
 Lets add a static page to our app that will hold information about the author of this application — you!
 
@@ -342,7 +342,7 @@ get "pages/info"
 
 Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML. To see your new info page, take your browser to [http://localhost:3000/pages/info](http://localhost:3000/pages/info) or, if you are a cloud service user, append ‘/pages/info’ to your preview url.
 
-### 7. Add a button to your navigation bar {#7-add-a-button-to-your-navigation-bar}
+### 7. Add a button to your navigation bar <a id="7-add-a-button-to-your-navigation-bar"></a>
 
 Now that we know your new static page works, let’s make sure people can visit it by creating a button for it in the navigation bar.
 
@@ -362,7 +362,7 @@ Refresh the page in your browser and click the newly created link to see if it w
 
 ![What you&apos;ll see on the new Info Page.  Until you add your own info of course!](.gitbook/assets/07-info.PNG)
 
-### 8+. What’s next? {#8whats-next}
+### 8+. What’s next? <a id="8whats-next"></a>
 
 * Add design using HTML & CSS
 * Add ratings

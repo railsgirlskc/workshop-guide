@@ -6,7 +6,7 @@ description: >-
 
 # Part 7: Create Users and Authentication with Devise
 
-### 1. Add devise gem {#1-add-devise-gem}
+### 1. Add devise gem <a id="1-add-devise-gem"></a>
 
 Open up your `Gemfile` and add this line
 
@@ -22,7 +22,7 @@ bundle install
 
 to install the gem. **Also remember to restart the Rails server**.
 
-### 2. Add Devise your app {#2-set-up-devise-in-your-app}
+### 2. Add Devise your app <a id="2-set-up-devise-in-your-app"></a>
 
 Run the following command in the terminal.
 
@@ -30,7 +30,7 @@ Run the following command in the terminal.
 rails g devise:install
 ```
 
-### 3. Configure Devise {#3-configure-devise}
+### 3. Configure Devise <a id="3-configure-devise"></a>
 
 Ensure you have defined default url options in your environments files. Open up `config/environments/development.rb` and add this line:
 
@@ -65,7 +65,7 @@ Open up `app/views/ideas/show.html.erb` and remove the line that says:
 
 Do the same for `app/views/comments/show.html.erb`. These lines are not necessary as we’ve put the notice in the `app/views/layouts/application.html.erb` file.
 
-### 4. Setup the User model {#4-setup-the-user-model}
+### 4. Setup the User model <a id="4-setup-the-user-model"></a>
 
 We’ll use a bundled generator script to create the User model.
 
@@ -78,13 +78,13 @@ Don't forget to restart your `rails server`
 
 **Coach:** Explain what user model has been generated. What are the fields?
 
-### 5. Create your first user {#5-create-your-first-user}
+### 5. Create your first user <a id="5-create-your-first-user"></a>
 
 Now that you have set everything up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
 
 Make sure your rails server is running, open [http://localhost:3000/users/sign\_up](http://localhost:3000/users/sign_up) and create your user account.
 
-### 6. Add sign-up and login links {#6-add-sign-up-and-login-links}
+### 6. Add sign-up and login links <a id="6-add-sign-up-and-login-links"></a>
 
 All we need to do now is to add appropriate links or notice about the user being logged in in the top right corner of the navigation bar.
 
@@ -127,7 +127,7 @@ Open your browser and try logging in and out from your app.
 
 ![](.gitbook/assets/11-devise-login%20%281%29.PNG)
 
-### What next? {#what-next}
+### What next? <a id="what-next"></a>
 
 * Add extra fields to the User model
 * Add relationships between users and ideas

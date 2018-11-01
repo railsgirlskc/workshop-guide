@@ -4,9 +4,9 @@ description: 'Created by Alyson La, @realalysonla, updated by Nicole Maneth'
 
 # Part 2: Push Your App to Github
 
-### Things you need before you get started {#things-you-need-before-you-get-started}
+### Things you need before you get started <a id="things-you-need-before-you-get-started"></a>
 
-#### Git & GitHub {#git--github}
+#### Git & GitHub <a id="git--github"></a>
 
 * Check if Git is installed
   * In the terminal type `git --version` \(1.8 or higher preferred\)
@@ -18,7 +18,7 @@ description: 'Created by Alyson La, @realalysonla, updated by Nicole Maneth'
 
 **COACH:** Talk a little about git, version control, and open source
 
-### Push your app to GitHub using the command line {#push-your-app-to-github-using-the-command-line}
+### Push your app to GitHub using the command line <a id="push-your-app-to-github-using-the-command-line"></a>
 
 On your GitHub profile click “new repo” ![screen shot 2013-06-01 at 12 38 50 pm](https://f.cloud.github.com/assets/2623954/595307/eb70c6cc-caf2-11e2-9d2d-60deb31ac049.png) give it a name \(example: rails-girls\), brief description, choose the “public” repo option, and click “create repository”.
 
@@ -102,9 +102,9 @@ git push origin master
 
 **COACH:** Talk about what makes a good commit message \(active, descriptive and short\).
 
-### What’s next? {#whats-next}
+### What’s next? <a id="whats-next"></a>
 
-#### Be a Part of the Open Source Community {#be-a-part-of-the-open-source-community}
+#### Be a Part of the Open Source Community <a id="be-a-part-of-the-open-source-community"></a>
 
 * Follow your fellow Rails Girls & coaches on GitHub
 * Star or watch their projects
@@ -112,7 +112,7 @@ git push origin master
 * Create an issue on a project when you find a bug
 * Explore other open source projects - search by programming language or key word
 
-#### Learn more Git {#learn-more-git}
+#### Learn more Git <a id="learn-more-git"></a>
 
 * Check out [trygit.org](http://try.github.io/)
 * Use a [Git Cheatsheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)

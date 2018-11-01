@@ -4,11 +4,11 @@ description: 'Created by Catherine Jones, Updated by Nicole Maneth'
 
 # Part 8: Add Profile Pics with Gravatar
 
-#### Important {#important}
+#### Important <a id="important"></a>
 
 You need to have an e-mail address registered with Gravatar for this to work. If you do not already have one you can go to [gravatar.com](http://en.gravatar.com/).
 
-### 1. Add the Gravtastic gem {#1-add-the-gravtastic-gem}
+### 1. Add the Gravtastic gem <a id="1-add-the-gravtastic-gem"></a>
 
 Open up your gemfile and under your `devise` gem add
 
@@ -24,7 +24,7 @@ bundle install
 
 This will install the gravtastic gem. Then remember to restart your rails server.
 
-### 2. Set up Gravatar in your app {#2-set-up-gravatar-in-your-app}
+### 2. Set up Gravatar in your app <a id="2-set-up-gravatar-in-your-app"></a>
 
 Open `app/models/user.rb`, and add these lines
 
@@ -35,7 +35,7 @@ gravtastic
 
 right after `class User < ApplicationRecord`.
 
-### 3. Configure Gravatar {#3-configure-gravatar}
+### 3. Configure Gravatar <a id="3-configure-gravatar"></a>
 
 Open `app/views/layouts/application.html.erb` and right under
 

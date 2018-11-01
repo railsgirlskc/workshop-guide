@@ -6,7 +6,7 @@ description: 'Created by Miha Filej, @mfilej, Edited by Nicole Maneth'
 
 **Coach**: Explain what specifying the image width in HTML at the end of Part 4 does and how it differs from resizing images on the server.
 
-### 1. Installing ImageMagick {#1-installing-imagemagick}
+### 1. Installing ImageMagick <a id="1-installing-imagemagick"></a>
 
 * OS X: run `brew install imagemagick`. If you don’t have the brew command, you can [install Homebrew here](https://brew.sh/). After installation, close and reopen the terminal to make sure imagemagick is loaded correctly
 * Windows: download and run the [ImageMagick installer](http://www.imagemagick.org/script/download.php#windows) \(use the first _download_ link\). In the installation wizard, make sure you check the checkbox to install legacy binaries. After installation, close and reopen GitBash, and Command Prompt with Ruby and Rails.
@@ -32,7 +32,7 @@ In the Terminal run:
 bundle
 ```
 
-### 2. Telling our app to create thumbnails when an image is uploaded {#2-telling-our-app-to-create-thumbnails-when-an-image-is-uploaded}
+### 2. Telling our app to create thumbnails when an image is uploaded <a id="2-telling-our-app-to-create-thumbnails-when-an-image-is-uploaded"></a>
 
 Open `app/uploaders/picture_uploader.rb` and find the line that looks like this:
 
@@ -54,7 +54,7 @@ end
 
 The images uploaded from now on should be resized, but the ones we already have weren’t affected. So edit one of the existing ideas and re-add a picture.
 
-### 3. Displaying the thumbnails {#3-displaying-the-thumbnails}
+### 3. Displaying the thumbnails <a id="3-displaying-the-thumbnails"></a>
 
 To see if the uploaded picture was resized open `app/views/ideas/index.html.erb`. Change the line
 

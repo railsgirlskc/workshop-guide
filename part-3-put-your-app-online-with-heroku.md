@@ -4,7 +4,7 @@ description: 'Created by Terence Lee, @hone02, updated by Nicole Maneth'
 
 # Part 3: Put your app online with Heroku
 
-#### Get Heroku {#get-heroku}
+#### Get Heroku <a id="get-heroku"></a>
 
 Follow steps “Introduction” and “Set up” of the [Getting Started on Heroku with Ruby](https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction) to sign up, install the Heroku CLI, and login.
 
@@ -12,7 +12,7 @@ Right now it looks like the download link for OpenSSL on the Heroku page is brok
 
 **COACH**: Talk about the benefits of deploying to Heroku vs traditional servers.
 
-#### Preparing your app {#preparing-your-app}
+#### Preparing your app <a id="preparing-your-app"></a>
 
 **Version Control Systems**
 
@@ -51,7 +51,7 @@ Don’t forget to do `git add .` and `git commit -m "Use postgres as production 
 
 **COACH**: You can talk about RDBMS and the different ones out there, plus include some details on Heroku’s dependency on PostgreSQL.
 
-#### Deploying your app {#deploying-your-app}
+#### Deploying your app <a id="deploying-your-app"></a>
 
 **App creation**
 
