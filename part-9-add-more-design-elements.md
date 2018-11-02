@@ -27,7 +27,7 @@ put the following code to the bottom of `app/assets/stylesheets/application.css`
 }
 ```
 
-Now refresh the page and check the changes. You can try change the color or font of the header. You can check the color reference from [https://pinetools.com/image-color-picker](https://pinetools.com/image-color-picker), or even the google search result for 'color picker' has one built in.
+Now refresh the page and check the changes. You can try change the color or font of the header. You can check the color reference from [https://www.w3schools.com/colors/colors\_picker.asp](https://www.w3schools.com/colors/colors_picker.asp) 
 
 Then put these lines at the bottom to style the link colors; pick your own colors to compliment your header color：
 
@@ -40,45 +40,21 @@ Then put these lines at the bottom to style the link colors; pick your own color
 }
 ```
 
-**Coach:** explain the 4 states of a link
-
 ### 2. Design your table <a id="2-design-your-table"></a>
 
-We simply use the twitter [Bootstrap](http://getbootstrap.com/) to polish our table. Find this line from app/views/ideas/index.html.erb and replace:
+We simply use the twitter [Bootstrap](http://getbootstrap.com/) to polish our website. 
 
-```text
-<table>
-```
+You can change the background color by adding this to the `application.css` file
 
-with
-
-```text
-<table class="table">
-```
-
-Modify size of the picture using the following lines
-
-```text
-<%= image_tag(idea.picture_url, :width => 600) if idea.picture.present? %>
-```
-
-try to change the width and see what’s gonna happen
-
-add the following lines to the bottom of file app/assets/stylesheets/ideas.css.scss:
-
-```text
-.container a:hover {
-  color: #f55e55;
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0);
-}
+```css
+body {  background-color: rgba(200, 255, 255, 50);}
 ```
 
 try add some background style with property `background-image`, reference to [http://subtlepatterns.com/](http://subtlepatterns.com/) for some patterns.
 
 ### 3. __Add style to footer <a id="3-add-style-to-footer"></a>
 
-add the lines to bottom of app/assets/stylesheets/application.css:
+add the lines to bottom of `app/assets/stylesheets/application.css`:
 
 ```text
 footer {
@@ -87,23 +63,21 @@ footer {
 }
 ```
 
-try put more things into `footer`, then adjust it’s position.
+try put more things into `footer`, then adjust its position.
 
-### 4. Add style to button <a id="4-add-style-to-button"></a>
+### 4. Add style to the buttons <a id="4-add-style-to-button"></a>
 
 open [http://localhost:3000/ideas/new](http://localhost:3000/ideas/new) and find the `Create Idea` button.
 
-add these lines to app/assets/stylesheets/ideas.css.scss
+edit the bottom of your `app/views/ideas/_form.html.erb` file and change the submit button line to:
 
-```text
-.container input[type="submit"] {
-  height: 30px;
-  font-size: 13px;
-  background-color: #f55e55;
-  border: none;
-  color: #fff;
-}
+```ruby
+  <%= form.submit 'Save', :class => 'btn btn-info' %>
 ```
 
-**Coach:** explain how to use `border` in css, try modify the style of button like round the corner, add shadow or color etc.
+Since our app uses bootstrap, we can use built in styles to quickly improve the look of our app.  Learn more here: [http://getbootstrap.com/2.3.2/base-css.html\#buttons](http://getbootstrap.com/2.3.2/base-css.html#buttons)
+
+Go and find the button for the comments form and update its style, too.
+
+Let your imagination go wild, adding more style your custom website!
 
