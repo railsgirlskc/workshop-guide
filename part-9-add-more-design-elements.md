@@ -40,7 +40,7 @@ Then put these lines at the bottom to style the link colors; pick your own color
 }
 ```
 
-### 2. Design your table <a id="2-design-your-table"></a>
+### 2. Design your background <a id="2-design-your-table"></a>
 
 We simply use the twitter [Bootstrap](http://getbootstrap.com/) to polish our website. 
 
@@ -50,7 +50,18 @@ You can change the background color by adding this to the `application.css` file
 body {  background-color: rgba(200, 255, 255, 50);}
 ```
 
-try add some background style with property `background-image`, reference to [http://subtlepatterns.com/](http://subtlepatterns.com/) for some patterns.
+You can use a pattern as the background, too. Reference to [http://subtlepatterns.com/](http://subtlepatterns.com/) for some patterns.  
+
+Put your desired image file in `app/assets/images/` and add `body { background-image:url('your_image_name.png');}` to your `application.css` file.
+
+For the image to work on heroku, edit the `config/environments/production.rb` file and change `config.assets.compile = false` to 
+
+```ruby
+config.cache_classes = true
+config.serve_static_assets = true
+config.assets.compile = true
+config.assets.digest = true
+```
 
 ### 3. __Add style to footer <a id="3-add-style-to-footer"></a>
 
