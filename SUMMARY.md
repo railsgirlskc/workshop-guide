@@ -10,4 +10,5 @@
 * [Part 7: Create Users and Authentication with Devise](part-7-create-users-and-authentication-with-devise.md)
 * [Part 8: Add Profile Pics with Gravatar](part-8-add-profile-pics-with-gravatar.md)
 * [Part 9: Add more Design Elements](part-9-add-more-design-elements.md)
+* [Part 10: What Next?](part-10-what-next.md)
 
