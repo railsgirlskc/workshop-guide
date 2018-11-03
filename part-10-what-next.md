@@ -18,6 +18,8 @@ And to push the updates to heroku:
 
 ### More learning tutorials
 
+Corsera Ruby on Rails: [https://www.coursera.org/specializations/ruby-on-rails](https://www.coursera.org/specializations/ruby-on-rails)
+
 Codecademy Ruby: [https://www.codecademy.com/learn/learn-ruby](https://www.codecademy.com/learn/learn-ruby)
 
 Codecademy Ruby on Rails: [https://www.codecademy.com/learn/learn-rails](https://www.codecademy.com/learn/learn-rails)
