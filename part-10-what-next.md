@@ -2,7 +2,7 @@
 
 Thanks so much for coming to our first ever Rails Girls KC event!
 
-### `P`ush your latest updates to Github and Heroku
+### Push your latest updates to Github and Heroku
 
 Add your updates to git:
 
