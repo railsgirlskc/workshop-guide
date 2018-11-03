@@ -115,6 +115,6 @@ git push origin master
 #### Learn more Git <a id="learn-more-git"></a>
 
 * Check out [trygit.org](http://try.github.io/)
-* Use a [Git Cheatsheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+* Use a [Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 * Look up Git Commands at [git-scm.org](http://git-scm.com/)
 
