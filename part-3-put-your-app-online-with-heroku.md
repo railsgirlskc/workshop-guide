@@ -60,7 +60,11 @@ https://young-reaches-87845.herokuapp.com/ | https://git.heroku.com/young-reache
 
 In this case “young-reaches-87845” is your app name.  It's randomly generated; yours will different than this one in the guide, and your neighbors.
 
-Because this project uses an older, but still common, version of ruby, we'll have to tell Heroku we want to use an older stack on their servers by typing `heroku stack:set heroku-16`
+Because this project uses an older, but still common, version of ruby, we'll have to tell Heroku we want to use an older stack on their servers by typing 
+
+```text
+heroku stack:set heroku-16
+```
 
 **Pushing the code**
 
