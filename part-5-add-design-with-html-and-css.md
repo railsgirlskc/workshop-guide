@@ -27,7 +27,7 @@ Considering “idea” is the most important object in your app, we are going to
 Open `app/views/layouts/application.html.erb`, under the line
 
 ```markup
-<li class="active"><a href="/ideas">Ideas</a></li>
+<li><a href="/ideas">Ideas</a></li>
 ```
 
 add

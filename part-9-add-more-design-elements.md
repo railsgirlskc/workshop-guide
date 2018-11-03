@@ -2,7 +2,7 @@
 
 ### 1. Design your header <a id="1-design-your-header"></a>
 
-In `app/views/layouts/application.html` change  
+In `app/views/layouts/application.html.erb` change  
 
 ```markup
 <body>
