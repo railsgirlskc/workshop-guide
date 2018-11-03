@@ -1,7 +1,3 @@
----
-description: 'Created by Alex Liao, @alexliao, Edited by Nicole Maneth'
----
-
 # Part 5: Add Design with HTML and CSS
 
 Now the app is running well, but it still looks like scaffold. Let’s add some design to make it look like a professional website. When you’ve finished this tutorial, your app will look like [this](http://railsgirlsapp.herokuapp.com/ideas).

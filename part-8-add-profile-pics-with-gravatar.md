@@ -1,7 +1,3 @@
----
-description: 'Created by Catherine Jones, Updated by Nicole Maneth'
----
-
 # Part 8: Add Profile Pics with Gravatar
 
 #### Important <a id="important"></a>

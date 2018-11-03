@@ -1,7 +1,3 @@
----
-description: 'Created by Janika Liiv, @janikaliiv, Edited by Nicole Maneth'
----
-
 # Part 4: Allow Comments on your App
 
 We are going to add the possibility to comment on ideas in your Rails Girls application.

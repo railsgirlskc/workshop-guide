@@ -1,7 +1,3 @@
----
-description: 'Created by Terence Lee, @hone02, updated by Nicole Maneth'
----
-
 # Part 3: Put your app online with Heroku
 
 #### Get Heroku <a id="get-heroku"></a>

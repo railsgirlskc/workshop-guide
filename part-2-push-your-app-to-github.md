@@ -4,9 +4,9 @@ description: 'Created by Alyson La, @realalysonla, updated by Nicole Maneth'
 
 # Part 2: Push Your App to Github
 
-### Things you need before you get started <a id="things-you-need-before-you-get-started"></a>
+## Things you need before you get started  <a id="things-you-need-before-you-get-started"></a>
 
-#### Git & GitHub <a id="git--github"></a>
+### Git & GitHub  <a id="git--github"></a>
 
 * Check if Git is installed
   * In the terminal type `git --version` \(1.8 or higher preferred\)
@@ -18,7 +18,7 @@ description: 'Created by Alyson La, @realalysonla, updated by Nicole Maneth'
 
 **COACH:** Talk a little about git, version control, and open source
 
-### Push your app to GitHub using the command line <a id="push-your-app-to-github-using-the-command-line"></a>
+## Push your app to GitHub using the command line  <a id="push-your-app-to-github-using-the-command-line"></a>
 
 On your GitHub profile click “new repo” ![screen shot 2013-06-01 at 12 38 50 pm](https://f.cloud.github.com/assets/2623954/595307/eb70c6cc-caf2-11e2-9d2d-60deb31ac049.png) give it a name \(example: rails-girls\), brief description, choose the “public” repo option, and click “create repository”.
 
@@ -86,11 +86,11 @@ Then type:
 git push -u origin master
 ```
 
-If this command results in an error like `fatal: unable to access  error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version`then we'll install git directly from the source.  Follow the default settings.  Once the installation finishes, you will have a new program called "Git Bash" on your machine.  You will use this command terminal for interacting with git throughout the tutorial.
+If this command results in an error like `fatal: unable to access error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version`then we'll install [git directly from the source](https://git-scm.com/download/win). Follow the default settings. Once the installation finishes, you will have a new program called "Git Bash" on your machine. You will use this command terminal for interacting with git throughout the tutorial.
 
 This sends your commits in your “master” branch to GitHub
 
-Congratulations your app is on GitHub! Go check it out by going to the same url you used above: https://github.com/username/rails-girls \(without the .git part\)
+Congratulations your app is on GitHub! Go check it out by going to the same url you used above: [https://github.com/username/rails-girls](https://github.com/username/rails-girls) \(without the .git part\)
 
 If you want to continue making changes and pushing them to GitHub you’ll just need to use the following three commands:
 
@@ -102,9 +102,9 @@ git push origin master
 
 **COACH:** Talk about what makes a good commit message \(active, descriptive and short\).
 
-### What’s next? <a id="whats-next"></a>
+## What’s next?  <a id="whats-next"></a>
 
-#### Be a Part of the Open Source Community <a id="be-a-part-of-the-open-source-community"></a>
+### Be a Part of the Open Source Community  <a id="be-a-part-of-the-open-source-community"></a>
 
 * Follow your fellow Rails Girls & coaches on GitHub
 * Star or watch their projects
@@ -112,7 +112,7 @@ git push origin master
 * Create an issue on a project when you find a bug
 * Explore other open source projects - search by programming language or key word
 
-#### Learn more Git <a id="learn-more-git"></a>
+### Learn more Git  <a id="learn-more-git"></a>
 
 * Check out [trygit.org](http://try.github.io/)
 * Use a [Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)

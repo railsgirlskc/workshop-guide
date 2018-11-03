@@ -1,7 +1,3 @@
----
-description: 'Created by Vesa Vänskä, @vesan, updated by Nicole Maneth'
----
-
 # Part 1: Build Your First App
 
 **Make sure you have Rails installed.** [**Follow the installation guide**](https://railsgirlskc.gitbook.io/install-guide/) to get set up.

@@ -1,9 +1,3 @@
----
-description: >-
-  Created by Piotr Steininger, @polishprince Updated by Ernesto Jimenez,
-  @ernesto_jimenez and Nicole Maneth
----
-
 # Part 7: Create Users and Authentication with Devise
 
 ### 1. Add devise gem <a id="1-add-devise-gem"></a>

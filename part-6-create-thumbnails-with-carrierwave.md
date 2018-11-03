@@ -1,7 +1,3 @@
----
-description: 'Created by Miha Filej, @mfilej, Edited by Nicole Maneth'
----
-
 # Part 6: Create Thumbnails with CarrierWave
 
 **Coach**: Explain what specifying the image width in HTML at the end of Part 4 does and how it differs from resizing images on the server.
