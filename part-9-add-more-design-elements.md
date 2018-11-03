@@ -2,7 +2,7 @@
 
 ### 1. Design your header <a id="1-design-your-header"></a>
 
-In `application.html` change  
+In `app/views/layouts/application.html` change  
 
 ```markup
 <body>
