@@ -20,7 +20,7 @@ description: 'Created by Alyson La, @realalysonla, updated by Nicole Maneth'
 
 ## Push your app to GitHub using the command line  <a id="push-your-app-to-github-using-the-command-line"></a>
 
-On your GitHub profile click “new repo” ![screen shot 2013-06-01 at 12 38 50 pm](https://f.cloud.github.com/assets/2623954/595307/eb70c6cc-caf2-11e2-9d2d-60deb31ac049.png) give it a name \(example: rails-girls\), brief description, choose the “public” repo option, and click “create repository”.
+On your GitHub profile click “new repo” ![](.gitbook/assets/screen-shot-2019-10-18-at-8.59.14-pm.png) give it a name \(example: rails-girls\), brief description, choose the “public” repo option, and click “create repository”.
 
 In the command line–make sure you `cd` into your railgirls folder–and type:
 

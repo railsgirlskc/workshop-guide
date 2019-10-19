@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Rails Guide](README.md)
+* [Rails Beginner Cheat Sheet](http://www.pragtob.info/rails-beginner-cheatsheet/)
 * [Part 1: Build Your First App](part-1-build-your-first-app.md)
 * [Part 2: Push Your App to Github](part-2-push-your-app-to-github.md)
 * [Part 3: Put your app online with Heroku](part-3-put-your-app-online-with-heroku.md)

@@ -8,21 +8,15 @@ Right now it looks like the download link for OpenSSL on the Heroku page is brok
 
 **COACH**: Talk about the benefits of deploying to Heroku vs traditional servers.
 
-#### Preparing your app <a id="preparing-your-app"></a>
+#### If you are using windows:
 
-**Version Control Systems**
-
-We need to add our code to version control. You can do this by running the following in the terminal:
+Because this project uses an older, but still common, version of ruby, we'll have to tell Heroku we want to use an older stack on their servers by typing 
 
 ```text
-git init
-git add .
-git commit -m "initial commit"
+heroku stack:set heroku-16
 ```
 
-**COACH**: This would be a good time to talk about version control systems and git.
-
-**Updating our database**
+#### **Updating our database**
 
 First, we need to get our database to work on Heroku, which uses a different database. Please change the following in the Gemfile:
 
@@ -47,7 +41,7 @@ Don’t forget to do `git add .` and `git commit -m "Use postgres as production 
 
 **COACH**: You can talk about RDBMS and the different ones out there, plus include some details on Heroku’s dependency on PostgreSQL.
 
-#### Deploying your app <a id="deploying-your-app"></a>
+### Deploying your app
 
 **App creation**
 
@@ -59,12 +53,6 @@ https://young-reaches-87845.herokuapp.com/ | https://git.heroku.com/young-reache
 ```
 
 In this case “young-reaches-87845” is your app name.  It's randomly generated; yours will different than this one in the guide, and your neighbors.
-
-Because this project uses an older, but still common, version of ruby, we'll have to tell Heroku we want to use an older stack on their servers by typing 
-
-```text
-heroku stack:set heroku-16
-```
 
 **Pushing the code**
 
@@ -94,7 +82,7 @@ remote:        Released v5
 remote:        https://young-reaches-87845.herokuapp.com/ deployed to Heroku
 remote:
 remote: Verifying deploy... done.
-To https://git.heroku.com/young-reaches-87845.git
+To https://evening-caverns-91176.herokuapp.com/
  * [new branch]      master -> master
 ```
 
@@ -108,11 +96,11 @@ Next we need to migrate our database like we did locally during the workshop:
 heroku run rails db:migrate
 ```
 
-When that command is finished being run, you can hit the app based on the url. For this example app, you can go to [https://young-reaches-87845.herokuapp.com/](https://young-reaches-87845.herokuapp.com/). You can also type `heroku open` in the terminal to visit the page.
+When that command is finished being run, you can hit the app based on the url. For this example app, you can go to[https://evening-caverns-91176.herokuapp.com/](https://evening-caverns-91176.herokuapp.com/) . You can also type `heroku open` in the terminal to visit your project page.
 
-**Closing notes**
+### **Closing notes**
 
-Heroku’s platform is not without its quirks. Applications run on Heroku live within an ephermeral environment — this means that \(except for information stored in your database\) any files created by your application will disappear if it restarts \(for example, when you push a new version\).
+Heroku’s platform is not without its quirks. Applications run on Heroku live within an ephemeral environment — this means that \(except for information stored in your database\) any files created by your application will disappear if it restarts \(for example, when you push a new version\).
 
 **Ephemeral filesystem**
 

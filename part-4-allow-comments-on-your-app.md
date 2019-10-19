@@ -2,8 +2,6 @@
 
 We are going to add the possibility to comment on ideas in your Rails Girls application.
 
-The instructions for installing rails and building the ideas app can be found [here](part-1-build-your-first-app.md).
-
 ### 1. Create comment scaffold <a id="1-create-comment-scaffold"></a>
 
 Create a comment scaffold, with the commentator name, the comment body \(contents of the comment\) and with the reference to the ideas table \(`idea_id`\).

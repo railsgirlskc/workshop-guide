@@ -50,6 +50,12 @@ First, let’s open a terminal:
 * Linux \(Ubuntu/Fedora\): Search for _Terminal_ on the dash and click _Terminal_.
 * Cloud service \(e.g. Codenvy\): Log in to your account, start your project and switch to its IDE \(see [installation guide](http://guides.railsgirls.com/install#using-a-cloud-service) for details\). The terminal is usually at the bottom of your browser window.
 
+The Cheat Sheet linked in the sidebar has some tips for navigating your file tree in the terminal.  
+
+We are going to be navigating to the `Documents` folder, and adding a new `projects` folder to keep our rails projects in.
+
+Use `pwd` to see your current directory location in the terminal.  Use `cd` to change directories.  Your coach can help you get to the `Documents` folder.
+
 Next, type these commands in the terminal:
 
 ```text
@@ -62,7 +68,9 @@ You can verify that a directory named `projects` was created by running the list
 cd projects
 ```
 
-You can verify you are now in an empty directory or folder by again running the `ls` command. Now you want to create a new app called `railsgirls` by running:
+You can verify you are now in an empty directory or folder by again running the `ls` command. 
+
+Now you want to create a new app called `railsgirls` by running:
 
 ```text
 rails new railsgirls
@@ -94,7 +102,7 @@ $
 
 When the command prompt is not visible you cannot execute new commands. If you try running `cd` or another command it will not work. To return to the normal command prompt:
 
-Hit Ctrl+C in the terminal to quit the server.
+Hit `Ctrl+C` in the terminal to quit the server.
 
 **Coach:** Explain what each command does. What was generated? What does the server do?
 
@@ -103,6 +111,8 @@ Hit Ctrl+C in the terminal to quit the server.
 We’re going to use Rails’ scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
 **Coach:** What is Rails scaffolding? \(Explain the command, the model name and related database table, naming conventions, attributes and types, etc.\) What are migrations and why do you need them?
+
+Open a new tab in your terminal, if you'd like.  This'll let you keep the app running with `rails server` in one tab while adding new features in the new tab. Don't forget to navigate the file tree to get back to `Documents/projects/railsgirls` or wherever your project is located.  On Mac, you can use `⌘T` to open a new tab in the same file location as your current tab.
 
 ```text
 rails generate scaffold idea name:string description:text picture:string
@@ -119,7 +129,7 @@ Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser.
 
 Click around and test what you got by running these few command-line commands.
 
-![What you should see on your screen now.](.gitbook/assets/ideas.PNG)
+![](.gitbook/assets/ideas.PNG)
 
 ### 3. Design <a id="3-design"></a>
 
@@ -246,6 +256,8 @@ If you added this gem, please run in your terminal again:
 bundle
 ```
 
+Since we added new gems we'll need to restart our server so we can pick up the changes.  `Ctrl + C` and `rails server` will restart the server.
+
 Open `app/models/idea.rb` and under the line
 
 ```ruby
@@ -271,6 +283,21 @@ to
 ```
 
 In your file it might actually say `<%= f.text_field :picture %>`, just roll with it. You'll replace it with `<%= f.form_field :picture %>` 
+
+Images might come out turned the wrong way to fix that we need to edit some code in our `app/uploaders/picture_uploader.rb`
+
+Uncomment the line `#include CarrierWave::MiniMagick` by removing the `#` in front.  
+
+Then add the following:
+
+```ruby
+  process :auto_orient
+  def auto_orient
+    manipulate! do |img|
+      img = img.auto_orient
+    end
+  end
+```
 
 In your browser, add new idea with a picture. When you upload a picture it doesn’t look nice because it only shows a path to the file, so let’s fix that.
 
@@ -300,7 +327,7 @@ to
 
 Now refresh your browser to see what changed. Note: Some people might be using a second terminal to run the rails server continuously.
 
-![Some CSS adds style to the  app.](.gitbook/assets/06-ideas-styled.PNG)
+![ ](.gitbook/assets/06-ideas-styled.PNG)
 
 Try entering a new idea with a picture. See how our CSS styles it.
 
