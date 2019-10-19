@@ -14,7 +14,10 @@ git push
 
 And to push the updates to heroku:
 
-`git push heroku master`
+```text
+git push heroku master
+heroku run rake db:migrate
+```
 
 ### More learning tutorials
 
@@ -30,5 +33,5 @@ Michael Hartl's great tutorials: [https://www.railstutorial.org/book](https://ww
 
 Join us at a KC Ruby Meetup: [https://www.meetup.com/kcruby/](https://www.meetup.com/kcruby/)
 
-Go to other KCWiT Events: [https://kcwomenintech.org/events/](https://kcwomenintech.org/events/)
+Go to other KCWiT Events: [https://business.kctechcouncil.com/events/](https://business.kctechcouncil.com/events/)
 
