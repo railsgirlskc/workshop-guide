@@ -13,7 +13,7 @@
 Open `Gemfile` in the project and add
 
 ```ruby
-gem 'mini_magick', '4.8.0'
+gem 'mini_magick', '4.9.5'
 ```
 
 under the line
@@ -64,7 +64,7 @@ to
 <%= image_tag idea.picture_url(:thumb) if idea.picture.present? %>
 ```
 
-Take a look at the list of ideas in the browser to see if the thumbnail is there.
+Take a look at the list of ideas in the browser to see if the thumbnail is there. You will probably need to re-upload the images for the new thumbnails to generate.
 
 ![Our images are now resized/cropped to be 50x50px thumbnails](.gitbook/assets/10-carrierwave-thumbnails.PNG)
 
