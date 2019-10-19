@@ -57,7 +57,7 @@ Open up `app/views/ideas/show.html.erb` and remove the line that says:
 <p id="notice"><%= notice %></p>
 ```
 
-Do the same for `app/views/comments/show.html.erb`. These lines are not necessary as we’ve put the notice in the `app/views/layouts/application.html.erb` file.
+Do the same for `app/views/comments/show.html.erb` and `app/views/ideas/show.html.erb`. These lines are not necessary as we’ve put the notice in the `app/views/layouts/application.html.erb` file.
 
 ### 4. Setup the User model <a id="4-setup-the-user-model"></a>
 
